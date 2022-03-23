@@ -1,9 +1,9 @@
-describe('Login / Logout test', () => {
-    before(function() {
-        cy.visit('http://zero.webappsecurity.com/index.html')
-        cy.url().should('include', 'index.html')
-        cy.get('#signin_button').click
-    })
+describe('Login / Logout Test', () => {
+	before(function() {
+		cy.visit('http://zero.webappsecurity.com/index.html')
+		cy.url().should('include', 'index.html')
+		cy.get('#signin_button').click()
+	})
 
       it('should try to login with invalid data', () => {
       cy.get('#login_form').should('be.visible')

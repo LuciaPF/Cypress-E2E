@@ -1,5 +1,5 @@
 
-describe('Payement Test', () => {
+describe('currency exchange', () => {
     before(function() {
         cy.visit('http://zero.webappsecurity.com/index.html')
         cy.get('#signin_button').click()
